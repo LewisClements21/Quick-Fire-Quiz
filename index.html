@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Quick-Fire Quiz</title>
+</head>
+<body>
+    <h1 id="heading">
+        Quick-Fire Quiz <i class="fa-solid fa-fire"></i>
+    </h1>
+    <div class="game-area">
+        <div class="menu">
+            <button data-type="General Knowledge" class="general">General Knowledge</button>
+            <button data-type="Entertainment" class="entertainment">Entertainment</button>
+        </div>
+        <div class="menu">
+            <button data-type="History" class="history">History</button>
+            <button data-type="Geography" class="geography">Geography</button>
+        </div>
+        <div class="question-area">
+            <span id="question">Question</span>
+            <br>
+            <div class="options-container">
+                <p class="option" data-number="1">Option 1</p>
+            </div>
+            <div class="options-container">
+                <p class="option" data-number="2">Option 2</p>
+            </div>
+            <div class="options-container">
+                <p class="option" data-number="3">Option 3</p>
+            </div>
+            <div class="options-container">
+                <p class="option" data-number="4">Option 4</p>
+            </div>
+            <br>
+            <button id="submit" data-type="submit">Submit Answer</button>
+        </div>
+    </div>
+    <div class="score-area">
+        <p class="scores">Score: <span id="score">0</span></p>
+    </div>
+<script src="assets/js/script.js"></script>
+<script src="https://kit.fontawesome.com/856dbb2edf.js" crossorigin="anonymous"></script>
+</body>
+</html>
