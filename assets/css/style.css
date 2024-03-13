@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 body {
-    background-color: white;
+    background-color: black;
     font-family: "Lato", sans-serif;
     color: orange;
     text-align: center;
@@ -44,10 +44,10 @@ body {
     height: 60px;
 }
 .game-area {
-    background-color: #E6ECF0;
+    background-color: darkgrey;
     box-sizing: border-box;
     width: 85%;
-    height: 65vh;
+    height: 85vh;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
@@ -78,7 +78,7 @@ body {
     color: #445361;
     display: inline-block;
     margin-top: 30px;
-    height: 40px;
+    height: 30px;
     width: 50vw;
     font-size: 1.2rem;
     text-align: center;
@@ -96,6 +96,7 @@ button {
     background-color: #E6ECF0;
     border-radius: 20px;
     margin-bottom: 20px;
+    font-size: xx-small;
 }
 span {
     padding-bottom: 35px;
@@ -104,29 +105,40 @@ span {
     .game-area {
         height: 85vh;
     }
-}
-@media screen and (min-width:1200px) {
     button {
-        height:10vh;
-        width: 25vw;
+        font-size: large;
+        height: 10vh;
+        width: 60vw;
     }
-    #answer-box {
-        width: 15vw;
+}
+@media screen and (max-width:1300px) {
+    button  {
+        width: 60vw;
+    }
+}
+@media screen and (min-width: 1300px) {
+    button {
+        width: 40vw;
+        font-size: x-large;
+    }
+    .game-area {
+        width: 90%;
+        max-width: 2000px;
     }
     .general {
         width: 35vw;
-        height: 80px;
+        height: 100px;
     }
     .entertainment {
         width: 35vw;
-        height: 80px
+        height: 100px
     }
     .geography {
         width: 35vw;
-        height: 80px;
+        height: 100px;
     }
     .history {
         width: 35vw;
-        height: 80px;
+        height: 100px;
     }
 }
