@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 /** Allows the player to select a question category to start 
 */
-    
+    function runGame(category) {
     let category = (document.getElementsByClassName("menu"));
     button.addEventListener("click", function() {
     if (category === "generalQuestions") {
@@ -105,13 +105,14 @@ document.addEventListener("DOMContentLoaded", function() {
         alert(`unknown game type: ${category}`);
         throw `unknown game type: ${category}. Aborting!`;
     }
-    const startGame = () => {
+
+    const runGame = () => {
         document.getElementsByClassName("question-area");
         score = 0;
         availableQuestions = ${category};
         getQuestion();
-    }
-})
+    }}
+)}
 /**Retrieves a new random question from the available questions list and updates the
  * quiz interface with new questions and its options. If there are no more available
  * questions or max amount of questions have been reached,
