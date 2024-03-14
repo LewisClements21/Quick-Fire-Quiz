@@ -7,29 +7,36 @@
     <meta name="description" content="Quick-Fire Quiz, Test Your Knowledge">
     <meta name="keywords" content="quiz, quiz game">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-io/favicon-32x32.png">
     <title>Quick-Fire Quiz</title>
 </head>
 
 <body>
 
-    <!-- Main heading -->
 
     <h1 id="main-heading"><a href="index.html">Quick-Fire Quiz <i class="fa-solid fa-fire" aria-hidden="true"></i></a>
     </h1>
 
-    <!-- Quiz end container -->
 
     <div class="container">
         <div id="quiz-area">
             <h2 id="user">Well done!</h2>
-            <p id="score-result">Your final score is: score</p>
+            <p id="score">Your final score is: score</p>
             <a class="btn" href="index.html">Play Again?</a>
         </div>
     </div>
+    <script>
+        // Get score from localStorage
+        const score = localStorage.getItem("quizScore");
 
+        // Display the score
+        document.getElementById('score').textContent = "Your final score is: " + score;
+
+        // Remove the score from localStorage
+        localStorage.removeItem("quizScore");
+    </script>
     <script src="https://kit.fontawesome.com/3b53fd0ccc.js" crossorigin="anonymous"></script>
 </body>
 

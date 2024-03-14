@@ -15,6 +15,7 @@ body {
     color: orange;
 }
 .menu {
+    margin-top: 50px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -22,8 +23,9 @@ body {
 .general-btn {
     background-color: green;
     text-transform: uppercase;
-    width: 35vw;
-    height: 80px;
+    font-weight: 700;
+    width: 40vw;
+    height: 170px;
 }
 .option {
     transition: transform 0.3s ease;
@@ -35,20 +37,23 @@ body {
 .entertainment-btn {
     background-color: yellow;
     text-transform: uppercase;
-    width: 35vw;
-    height: 80px
+    font-weight: 700;
+    width: 40vw;
+    height: 170px;
 }
 .geography-btn {
     background-color: red;
     text-transform: uppercase;
-    width: 35vw;
-    height: 80px;
+    font-weight: 700;
+    width: 40vw;
+    height: 170px;
 }
 .history-btn {
     background-color: orange;
     text-transform: uppercase;
-    width: 35vw;
-    height: 80px;
+    font-weight: 700;
+    width: 40vw;
+    height: 170px;
 }
 .game-area {
     background-color: darkgrey;
@@ -61,7 +66,7 @@ body {
     padding: 1%;
 }
 .question-area {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
     padding: 50px 0;
     margin: auto;
@@ -79,7 +84,10 @@ body {
     color: green;
     font-weight: bold;
 }
-
+.question-area {
+    display: none;
+    text-align: center;
+}
 #incorrect {
     color: red;
     font-weight: bold;
@@ -93,25 +101,21 @@ body {
     font-size: 1.2rem;
     text-align: center;
 }
-#submit {
-    margin-top: 40px;
-    height: 60px;
-    text-transform: uppercase;
-    background-color: white;
-    border-radius: 20px;
-}
 button {
     height:5vh;
     width: 50vw;
     background-color: #E6ECF0;
     border-radius: 20px;
     margin-bottom: 20px;
-    font-size: xx-small;
+    font-size: x-small;
+}
+div i {
+    font-size: 16px;
 }
 span {
     padding-bottom: 35px;
 }
-@media screen and (min-width:700px) {
+@media screen and (min-width:600px) {
     .game-area {
         height: 85vh;
     }
@@ -119,6 +123,22 @@ span {
         font-size: large;
         height: 10vh;
         width: 60vw;
+    }
+    .general-btn {
+        width: 35vw;
+        height: 250px;
+    }
+    .entertainment-btn {
+        width: 35vw;
+        height: 250px;
+    }
+    .geography-btn {
+        width: 35vw;
+        height: 250px;
+    }
+    .history-btn {
+        width: 35vw;
+        height: 250px;
     }
 }
 @media screen and (max-width:1300px) {
@@ -129,26 +149,29 @@ span {
 @media screen and (min-width: 1300px) {
     button {
         width: 40vw;
-        font-size: x-large;
+        font-size: xx-large;
     }
     .game-area {
         width: 90%;
         max-width: 2000px;
     }
-    .general {
+    .general-btn {
         width: 35vw;
-        height: 100px;
+        height: 400px;
     }
-    .entertainment {
+    .entertainment-btn {
         width: 35vw;
-        height: 100px
+        height: 400px;
     }
-    .geography {
+    .geography-btn {
         width: 35vw;
-        height: 100px;
+        height: 400px;
     }
-    .history {
+    .history-btn {
         width: 35vw;
-        height: 100px;
+        height: 400px;
+    }
+    div i {
+        font-size: 40px;
     }
 }
