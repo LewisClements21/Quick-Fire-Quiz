@@ -19,29 +19,36 @@ body {
     display: flex;
     justify-content: center;
 }
-.general {
+.general-btn {
     background-color: green;
     text-transform: uppercase;
     width: 35vw;
-    height: 60px;
+    height: 80px;
 }
-.entertainment {
+.option {
+    transition: transform 0.3s ease;
+}
+
+.option:hover {
+    transform: scale(1.1);
+}
+.entertainment-btn {
     background-color: yellow;
     text-transform: uppercase;
     width: 35vw;
-    height: 60px
+    height: 80px
 }
-.geography {
+.geography-btn {
     background-color: red;
     text-transform: uppercase;
     width: 35vw;
-    height: 60px;
+    height: 80px;
 }
-.history {
+.history-btn {
     background-color: orange;
     text-transform: uppercase;
     width: 35vw;
-    height: 60px;
+    height: 80px;
 }
 .game-area {
     background-color: darkgrey;
