@@ -90,7 +90,15 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 /** Allows the player to select a question category to start 
 */
-    function runGame(category) {
+for (let button of buttons) {
+    button.addEventListener("click", function() {
+        if(this.getAttribute("date-type") === "submit") {
+            checkAnswer();
+        } else {
+            let category = this.getAttribute("data-type");
+            runGame(category);
+        }    
+    })        
     let category = (document.getElementsByClassName("menu"));
     button.addEventListener("click", function() {
     if (category === "generalQuestions") {
@@ -106,11 +114,15 @@ document.addEventListener("DOMContentLoaded", function() {
         throw `unknown game type: ${category}. Aborting!`;
     }
 
-    const runGame = () => {
-        document.getElementsByClassName("question-area");
-        score = 0;
-        availableQuestions = ${category};
-        getQuestion();
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            if(this.getAttribute("date-type") === "submit") {
+                checkAnswer();
+            } else {
+                let category = this.getAttribute("data-type");
+                runGame(category);
+            }
+        });
     }}
 )}
 /**Retrieves a new random question from the available questions list and updates the
