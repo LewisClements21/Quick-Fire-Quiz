@@ -5,7 +5,7 @@ body {
     color: orange;
     text-align: center;
 }
-#heading {
+.heading {
     text-align: center;
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -13,6 +13,13 @@ body {
 }
 #heading > i {
     color: orange;
+}
+h2 {
+    margin-top: 300px;
+    font-size: xx-large;
+}
+p {
+    font-size: x-large;
 }
 .menu {
     margin-top: 50px;
@@ -73,6 +80,10 @@ body {
 }
 #question {
     color: black;
+}
+div a {
+    color: orange;
+    font-size: xx-large;
 }
 .score-area {
     margin: 5px auto;
@@ -140,6 +151,10 @@ span {
         width: 35vw;
         height: 250px;
     }
+    div a {
+        font-size: 40px;
+    }
+    
 }
 @media screen and (max-width:1300px) {
     button  {
@@ -173,5 +188,8 @@ span {
     }
     div i {
         font-size: 40px;
+    }
+    h2 {
+        font-size: 55px;
     }
 }

@@ -16,14 +16,14 @@
 <body>
 
 
-    <h1 id="main-heading"><a href="index.html">Quick-Fire Quiz <i class="fa-solid fa-fire" aria-hidden="true"></i></a>
+    <h1 class="heading">Quick-Fire Quiz <i class="fa-solid fa-fire"></i></a>
     </h1>
 
 
     <div class="container">
         <div id="quiz-area">
             <h2 id="user">Well done!</h2>
-            <p id="score">Your final score is: score</p>
+            <p id="endScore">Your final score is: score</p>
             <a class="btn" href="index.html">Play Again?</a>
         </div>
     </div>
@@ -32,7 +32,7 @@
         const score = localStorage.getItem("quizScore");
 
         // Display the score
-        document.getElementById('score').textContent = "Your final score is: " + score;
+        document.getElementById('endScore').textContent = "Your final score is: " + score;
 
         // Remove the score from localStorage
         localStorage.removeItem("quizScore");
