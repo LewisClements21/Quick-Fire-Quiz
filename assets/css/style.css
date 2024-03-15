@@ -33,6 +33,7 @@ p {
     font-weight: 700;
     width: 40vw;
     height: 170px;
+    color: black;
 }
 .option {
     transition: transform 0.3s ease;
@@ -47,6 +48,7 @@ p {
     font-weight: 700;
     width: 40vw;
     height: 170px;
+    color: black;
 }
 .geography-btn {
     background-color: red;
@@ -54,6 +56,7 @@ p {
     font-weight: 700;
     width: 40vw;
     height: 170px;
+    color: black;
 }
 .history-btn {
     background-color: orange;
@@ -61,6 +64,7 @@ p {
     font-weight: 700;
     width: 40vw;
     height: 170px;
+    color: black;
 }
 .game-area {
     background-color: darkgrey;
