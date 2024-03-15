@@ -235,10 +235,11 @@ document.addEventListener("DOMContentLoaded", function () {
         
         question.innerText = currentQuestion.question;
 
-        // Makes the options clickable buttons
+        // Makes the option buttons clickable
         options.forEach((option, index) => {
             option.innerText = currentQuestion.options[index];
-            option.style.display = "inline"; // Make sure options are visible
+            // Makes options visible after selecting a category
+            option.style.display = "inline";
         });
 
         // Event listener for option being clicked
@@ -285,7 +286,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", () => {
             const category = button.dataset.type;
             runGame(category);
-            // Hide category buttons while category is being selected
+            // Hide option buttons while category is being selected
             categoryButtons.forEach(btn => {
                 btn.style.display = "none";
             });

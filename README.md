@@ -94,3 +94,102 @@ Quick-Fire Quiz provides a fun and educational experience that challenges users 
     * Mockup picture for the README file.
 
 ---
+
+## Testing
+
+The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate every html, css, and js file to ensure there were no errors.
+
+* [W3C Markup Validator](https://validator.w3.org/)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+* [JSHint](https://jshint.com/)
+
+### Validation results
+
+<details>
+<summary>HTML files, no errors were returned when passing through the official W3C Markup Validator.
+</summary>
+
+![Home Page validation result](/assets/images/html-validation.png)
+</details>
+
+<details>
+<summary>CSS file, No errors were found when passing through the official W3C CSS Validator. 
+</summary>
+
+![Home Page validation result](/assets/images/css-validation.png)
+</details>
+
+
+### JSHint results
+
+<details>
+<summary>script.js, No errors were found when passing through the official Jshint validator.
+</summary>
+
+![Home Page validation result](/assets/images/js-validation.png)
+</details>
+
+### Manual Testing 
+
+* The website was tested on Google Chrome, Microsoft Edge, and Opera browsers.
+* The website was viewed on a desktop computer, laptop, tablet, and a variety of mobile phones.
+* A large amount of testing was done to ensure links between pages are working correctly on all pages.
+* Family and friends were asked to review the website then play the quiz to gain feedback of the user experience.
+* Dev Tools was used to test how the site looks on various screen sizes.
+* Dev Tools Console was used to find any bugs that were not spotted.
+* Dev Tools Application's local storage used to track is the code functioning as intended.
+* Manually navigating to specific HTML pages by typing the URL of the page and checking the console and local storage.
+* JSHint was used to check quality of the code and any errors missed by the developer.
+* JSFiddle was used to test code before it was applied to the file.
+
+### Lighthouse Report
+
+#### Mobile analysis
+<details>
+<summary>Performance
+</summary>
+
+![Home Page lighthouse report](/assets/images/lighthouse-mobile.png)
+</details>
+
+#### Desktop analysis
+
+<details>
+<summary>Performance
+</summary>
+
+![Home Page lighthouse report](/assets/images/lighthouse-desktop.png)
+</details>
+
+## Deployment
+
+GitHub Pages used to deploy live version of the website.
+
+## Credits
+
+### Code
+
+ * I gained a much better understanding of arrays using w3 schools(https://www.w3schools.com/js/js_arrays.asp)
+ * The README template was helpfully provided by [Code Institute (template)](https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md)
+ * w3 schools also helped me better understand eventListeners so I could use them to create functioning buttons. (https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+ * I learned how to animate the clickable options using w3Schools (https://www.w3schools.com/howto/howto_js_animate.asp)
+
+  ### Content
+
+  * All content was written by the developer.
+  * [Font Awesome](https://fontawesome.com/) was used to obtain the free icon for the header and the category buttons.
+  * Obtained the favicon for the site from (https://favicon.io/).
+
+### Media
+
+ * [Font Awesome](https://fontawesome.com/)
+ * [Am I responsive?](https://amiresponsive.co.uk/)
+
+
+---
+
+## Acknowledgements
+
+ * My mentor Mitko Bachvarov provided very useful feedback.
+ * Slack community for inspiration.
+ * walkthrough project really helped me with the concept for the quiz, such as the 4 categories.
